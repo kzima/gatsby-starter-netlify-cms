@@ -20,6 +20,18 @@ const Pricing = ({ data }) => (
               </li>
             ))}
           </ul>
+          <form action="your-server-side-code" method="POST">
+            <script
+              src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-key="pk_test_f6CVQllFUxotTAiPmmtB2jVy"
+              data-amount="999"
+              data-name="Demo Site"
+              data-description="Example charge"
+              data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+              data-locale="auto"
+              data-currency="aud">
+            </script>
+          </form>
         </section>
       </div>
     ))}
